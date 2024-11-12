@@ -55,7 +55,7 @@ def mark_attendance():
 
     else:
 
-      print("Invalid date format. Please enter in YYYY-MM-DD format.")
+      print("Invalid date format. Please enter in DD-MM-YYYY format.")
 
 def view_attendance():
 
@@ -72,7 +72,7 @@ def view_attendance():
     print("Student ID not found.")
 
 def calculate_attendance_summary(student_id):
-  # this feature gives us an opportunity to see an attendance summary of a particular student, how many absent and present days in total student have.
+  # this feature gives an opportunity to see an attendance summary of a particular student, how many absent and present days in total student have.
   present_days = 0
   absent_days = 0
 
@@ -106,7 +106,7 @@ def validate_date(date_str):
     return False
 
 def main():
-  
+  # main menu will appear after each activity done
   while True:
     print("\nAttendance Tracker Menu:")
     print("1. Mark Today's Attendance")
